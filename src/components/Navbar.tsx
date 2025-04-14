@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="fixed w-full top-0 z-50 bg-transparent backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="text-3xl font-bold text-white">
-          PlayPhy
+          PhysVis
         </Link>
         <div className="hidden md:flex space-x-8">
           <Link to="/about" className="text-white hover:text-physics-purple transition-colors">

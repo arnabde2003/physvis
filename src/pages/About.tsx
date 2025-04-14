@@ -8,9 +8,9 @@ const About = () => {
     <div className="min-h-screen bg-physics-gradient text-white">
       <Navbar />
       <div className="container mx-auto px-4 py-20 pt-32">
-        <h1 className="text-4xl font-bold mb-8">About PlayPhy</h1>
+        <h1 className="text-4xl font-bold mb-8">About PhysVis</h1>
         <p className="text-xl mb-4">
-          Welcome to PlayPhy, your interactive platform for exploring the fascinating world of physics.
+          Welcome to PhysVis, your interactive platform for exploring the fascinating world of physics.
         </p>
         <p className="mb-4">
           Our mission is to make physics education engaging, interactive, and accessible to everyone.
@@ -18,7 +18,7 @@ const About = () => {
           of the physical world around us.
         </p>
         <p>
-          Whether you're a student, educator, or just curious about physics, PlayPhy offers a unique
+          Whether you're a student, educator, or just curious about physics, PhysVis offers a unique
           way to visualize and interact with various physics concepts.
         </p>
       </div>
