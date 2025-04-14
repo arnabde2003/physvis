@@ -19,7 +19,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-bold text-white mb-6"
         >
-          Welcome to <span className="text-physics-purple">PlayPhy</span>
+          Welcome to <span className="text-physics-purple">PhysVis</span>
         </motion.h1>
         
         <motion.p 
