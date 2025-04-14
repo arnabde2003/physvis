@@ -10,9 +10,18 @@ interface PhysicsCardProps {
   color: string;
   index: number;
   downloadText: string;
+  downloadLink?: string;
 }
 
-const PhysicsCard: React.FC<PhysicsCardProps> = ({ title, description, imageSrc, color, index, downloadText }) => {
+const PhysicsCard: React.FC<PhysicsCardProps> = ({ 
+  title, 
+  description, 
+  imageSrc, 
+  color, 
+  index, 
+  downloadText, 
+  downloadLink 
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -45,12 +54,24 @@ const PhysicsCard: React.FC<PhysicsCardProps> = ({ title, description, imageSrc,
             </svg>
           </a>
           
-          <button 
-            className={`inline-flex items-center justify-center px-4 py-2 bg-${color} bg-opacity-20 rounded-lg text-${color} hover:bg-opacity-30 transition-all`}
-          >
-            <Download className="h-4 w-4 mr-2" />
-            {downloadText}
-          </button>
+          {downloadLink ? (
+            <a 
+              href={downloadLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`inline-flex items-center justify-center px-4 py-2 bg-${color} bg-opacity-20 rounded-lg text-${color} hover:bg-opacity-30 transition-all`}
+            >
+              <Download className="h-4 w-4 mr-2" />
+              {downloadText}
+            </a>
+          ) : (
+            <button 
+              className={`inline-flex items-center justify-center px-4 py-2 bg-${color} bg-opacity-20 rounded-lg text-${color} hover:bg-opacity-30 transition-all`}
+            >
+              <Download className="h-4 w-4 mr-2" />
+              {downloadText}
+            </button>
+          )}
         </div>
       </div>
     </motion.div>

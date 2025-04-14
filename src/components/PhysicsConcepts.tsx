@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PhysicsCard from './PhysicsCard';
 
@@ -9,14 +8,16 @@ const PhysicsConcepts = () => {
       description: "Learn about the motion of objects launched into the air and affected by gravity, following a parabolic trajectory.",
       imageSrc: "/lovable-uploads/4a944919-9cd7-4742-9573-a46328768901.png",
       color: "physics-red",
-      downloadText: "Simulate Projectile in 2D"
+      downloadText: "Simulate Projectile in 2D",
+      downloadLink: "https://drive.google.com/file/d/15iXaqvQSKu38KduyBV7xVT8KxCic8K3Z/view?usp=drive_link"
     },
     {
       title: "Collision",
       description: "Explore the physics of objects colliding and exchanging momentum and energy in elastic and inelastic interactions.",
       imageSrc: "/lovable-uploads/49b9feb9-4cbe-4ae6-96c5-13b7c01b960f.png",
       color: "physics-blue",
-      downloadText: "Simulate 1D Elastic Collision"
+      downloadText: "Simulate 1D Elastic Collision",
+      downloadLink: "https://drive.google.com/file/d/1A5Jkv5zTMs0IOKUBWQCX3kNOlF3f1gHY/view?usp=sharing"
     },
     {
       title: "Logic Gate",
@@ -68,6 +69,7 @@ const PhysicsConcepts = () => {
               color={concept.color}
               index={index}
               downloadText={concept.downloadText}
+              downloadLink={concept.downloadLink}
             />
           ))}
         </div>
