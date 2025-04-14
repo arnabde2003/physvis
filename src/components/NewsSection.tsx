@@ -23,7 +23,7 @@ const NewsSection = () => {
         >
           <div className="relative h-64">
             <img 
-              src="/lovable-uploads/c3c04fe9-b528-44c8-be5e-9a6d7a9e2199.png" 
+              src="/lovable-uploads/1165e4eb-954b-4a0c-aa2b-d99128385be4.png" 
               alt="Coming Soon" 
               className="w-full h-full object-cover"
             />

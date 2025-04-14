@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import PhysicsConcepts from '../components/PhysicsConcepts';
 import NewsSection from '../components/NewsSection';
+import GameFeatures from '../components/GameFeatures';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -12,6 +13,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <PhysicsConcepts />
+      <GameFeatures />
       <NewsSection />
       <Footer />
     </div>

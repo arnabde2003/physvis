@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import PhysicsConcepts from '../components/PhysicsConcepts';
+import GameFeatures from '../components/GameFeatures';
 
 const Physics = () => {
   return (
@@ -14,6 +15,7 @@ const Physics = () => {
           Discover interactive simulations and detailed explanations of various physics concepts.
         </p>
         <PhysicsConcepts />
+        <GameFeatures />
       </div>
       <Footer />
     </div>

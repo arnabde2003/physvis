@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import NewsSection from '../components/NewsSection';
+import GameFeatures from '../components/GameFeatures';
 
 const News = () => {
   return (
@@ -14,6 +15,7 @@ const News = () => {
           Stay updated with the latest developments and additions to PlayPhy.
         </p>
         <NewsSection />
+        <GameFeatures />
       </div>
       <Footer />
     </div>
