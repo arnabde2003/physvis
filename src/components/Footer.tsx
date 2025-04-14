@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,27 +18,27 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Physics</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">Projectile</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">Collision</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">Logic Gate</a></li>
+                <li><Link to="/physics/projectile" className="text-gray-400 hover:text-physics-purple transition-colors">Projectile</Link></li>
+                <li><Link to="/physics/collision" className="text-gray-400 hover:text-physics-purple transition-colors">Collision</Link></li>
+                <li><Link to="/physics/logic-gate" className="text-gray-400 hover:text-physics-purple transition-colors">Logic Gate</Link></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">More Physics</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">Circular Motion</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">Magnetism</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">Inclination</a></li>
+                <li><Link to="/physics/circular-motion" className="text-gray-400 hover:text-physics-purple transition-colors">Circular Motion</Link></li>
+                <li><Link to="/physics/magnetism" className="text-gray-400 hover:text-physics-purple transition-colors">Magnetism</Link></li>
+                <li><Link to="/physics/inclination" className="text-gray-400 hover:text-physics-purple transition-colors">Inclination</Link></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Links</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">About</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">News</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-physics-purple transition-colors">Contact</a></li>
+                <li><Link to="/about" className="text-gray-400 hover:text-physics-purple transition-colors">About</Link></li>
+                <li><Link to="/news" className="text-gray-400 hover:text-physics-purple transition-colors">News</Link></li>
+                <li><Link to="/contact" className="text-gray-400 hover:text-physics-purple transition-colors">Contact</Link></li>
               </ul>
             </div>
           </div>
