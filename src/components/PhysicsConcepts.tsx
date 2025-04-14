@@ -1,0 +1,72 @@
+
+import React from 'react';
+import PhysicsCard from './PhysicsCard';
+
+const PhysicsConcepts = () => {
+  const concepts = [
+    {
+      title: "Projectile",
+      description: "Learn about the motion of objects launched into the air and affected by gravity, following a parabolic trajectory.",
+      imageSrc: "/lovable-uploads/4a944919-9cd7-4742-9573-a46328768901.png",
+      color: "physics-red"
+    },
+    {
+      title: "Collision",
+      description: "Explore the physics of objects colliding and exchanging momentum and energy in elastic and inelastic interactions.",
+      imageSrc: "/lovable-uploads/49b9feb9-4cbe-4ae6-96c5-13b7c01b960f.png",
+      color: "physics-blue"
+    },
+    {
+      title: "Logic Gate",
+      description: "Discover the fundamental building blocks of digital circuits that perform boolean logical operations.",
+      imageSrc: "/lovable-uploads/76981f16-f159-4135-8daa-2844599d2cbc.png",
+      color: "physics-green"
+    },
+    {
+      title: "Circular Motion",
+      description: "Understand the physics of objects moving in a circle under the influence of centripetal forces.",
+      imageSrc: "/lovable-uploads/8d50c5cf-9665-450c-a8cd-4dca3de76bfb.png",
+      color: "physics-purple"
+    },
+    {
+      title: "Magnetism",
+      description: "Investigate the invisible forces of attraction and repulsion between objects with magnetic properties.",
+      imageSrc: "/lovable-uploads/4f2c468e-834f-40be-a991-904954813e63.png",
+      color: "physics-yellow"
+    },
+    {
+      title: "Inclination",
+      description: "Study how objects move on inclined planes and the relationship between forces on slopes.",
+      imageSrc: "/lovable-uploads/1165e4eb-954b-4a0c-aa2b-d99128385be4.png",
+      color: "physics-orange"
+    }
+  ];
+
+  return (
+    <div id="physics-concepts" className="py-20 bg-physics-gradient">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Physics Concepts</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Dive into the fascinating world of physics with our interactive simulations and explanations.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {concepts.map((concept, index) => (
+            <PhysicsCard
+              key={concept.title}
+              title={concept.title}
+              description={concept.description}
+              imageSrc={concept.imageSrc}
+              color={concept.color}
+              index={index}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PhysicsConcepts;
