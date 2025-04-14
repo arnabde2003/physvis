@@ -12,7 +12,7 @@ const News = () => {
       <div className="container mx-auto px-4 py-20 pt-32">
         <h1 className="text-4xl font-bold mb-8">Latest News</h1>
         <p className="text-xl mb-8">
-          Stay updated with the latest developments and additions to PlayPhy.
+          Stay updated with the latest developments and additions to PhysVis.
         </p>
         <NewsSection />
         <GameFeatures />
