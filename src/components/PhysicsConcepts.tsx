@@ -21,7 +21,7 @@ const PhysicsConcepts = () => {
     {
       title: "Logic Gate",
       description: "Discover the fundamental building blocks of digital circuits that perform boolean logical operations.",
-      imageSrc: "/lovable-uploads/76981f16-f159-4135-8daa-2844599d2cbc.png",
+      imageSrc: "/lovable-uploads/4f2c468e-834f-40be-a991-904954813e63.png",
       color: "physics-green",
       downloadText: "Simulate the Three Fundamental Gates"
     },
@@ -35,12 +35,12 @@ const PhysicsConcepts = () => {
     {
       title: "Magnetism",
       description: "Investigate the invisible forces of attraction and repulsion between objects with magnetic properties.",
-      imageSrc: "/lovable-uploads/4f2c468e-834f-40be-a991-904954813e63.png",
+      imageSrc: "/lovable-uploads/76981f16-f159-4135-8daa-2844599d2cbc.png",
       color: "physics-yellow",
       downloadText: "Simulate Magnetic Interactions"
     },
     {
-      title: "Inclination",
+      title: "Motion on an inclined plane",
       description: "Study how objects move on inclined planes and the relationship between forces on slopes.",
       imageSrc: "/lovable-uploads/c3c04fe9-b528-44c8-be5e-9a6d7a9e2199.png",
       color: "physics-orange",
