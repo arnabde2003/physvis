@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="relative h-screen w-full overflow-hidden bg-physics-gradient">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: `url('/lovable-uploads/4a944919-9cd7-4742-9573-a46328768901.png')` }}
+        style={{ backgroundImage: `url('/lovable-uploads/c3c04fe9-b528-44c8-be5e-9a6d7a9e2199.png')` }}
       ></div>
       
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-physics-dark"></div>
