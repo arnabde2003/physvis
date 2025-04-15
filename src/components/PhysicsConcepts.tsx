@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PhysicsCard from './PhysicsCard';
 
@@ -34,7 +33,7 @@ const PhysicsConcepts = () => {
       imageSrc: "/lovable-uploads/8d50c5cf-9665-450c-a8cd-4dca3de76bfb.png",
       color: "physics-purple",
       downloadText: "Simulate Uniform Circular Motion",
-      downloadLink: "#"
+      downloadLink: "https://drive.google.com/file/d/19WSk6Iai2uziuC1YGWT8rFM-Rd3niA5W/view?usp=sharing"
     },
     {
       title: "Magnetism",
