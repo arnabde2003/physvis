@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -6,6 +5,10 @@ import Footer from './Footer';
 import { Button } from './ui/button';
 import { Download, ArrowLeft } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
+
+interface LearnTemplateProps {
+  slug: string;
+}
 
 interface LearnDetails {
   title: string;
@@ -382,9 +385,8 @@ const concepts: Record<string, LearnDetails> = {
   }
 };
 
-const LearnTemplate: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const concept = slug ? concepts[slug] : null;
+const LearnTemplate: React.FC<LearnTemplateProps> = ({ slug }) => {
+  const concept = concepts[slug];
   
   if (!concept) {
     return <div className="min-h-screen flex items-center justify-center">Concept not found</div>;
