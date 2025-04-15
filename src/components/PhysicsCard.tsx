@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface PhysicsCardProps {
   title: string;
@@ -22,6 +23,8 @@ const PhysicsCard: React.FC<PhysicsCardProps> = ({
   downloadText, 
   downloadLink 
 }) => {
+  const titleSlug = title.toLowerCase().replace(/\s+/g, '-');
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -44,29 +47,29 @@ const PhysicsCard: React.FC<PhysicsCardProps> = ({
         <p className="text-gray-300 mb-4">{description}</p>
         
         <div className="mt-auto flex flex-col space-y-3">
-          <a 
-            href={`#${title.toLowerCase()}`} 
+          <Link 
+            to={`/learn/${titleSlug}`}
             className={`inline-flex items-center text-${color} hover:underline font-medium`}
           >
             Learn more
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-          </a>
+          </Link>
           
           {downloadLink ? (
             <a 
               href={downloadLink} 
               target="_blank" 
               rel="noopener noreferrer"
-              className={`inline-flex items-center justify-center px-4 py-2 bg-${color} bg-opacity-20 rounded-lg text-${color} hover:bg-opacity-30 transition-all`}
+              className={`inline-flex items-center justify-center px-4 py-2 bg-physics-purple bg-opacity-20 rounded-lg text-physics-purple hover:bg-opacity-30 transition-all`}
             >
               <Download className="h-4 w-4 mr-2" />
               {downloadText}
             </a>
           ) : (
             <button 
-              className={`inline-flex items-center justify-center px-4 py-2 bg-${color} bg-opacity-20 rounded-lg text-${color} hover:bg-opacity-30 transition-all`}
+              className={`inline-flex items-center justify-center px-4 py-2 bg-physics-purple bg-opacity-20 rounded-lg text-physics-purple hover:bg-opacity-30 transition-all`}
             >
               <Download className="h-4 w-4 mr-2" />
               {downloadText}
